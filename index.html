@@ -3,53 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Revou</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Travel.co-Mini Task Revou</title>
+
+    <!-- Link to CSS -->
+     <link rel="stylesheet" href="css\styles.css">
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <script src="js/script.js"></script>
-    <nav>
-        <header>
-            <div class="logo-item"></div>
-        </header>
+    <!-- Header -->
+     <header>
+        <div class="logo">KeyTravel</div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="navbar">
+                <li><a href="#home" class="home-activate">Home</a></li>
+                <li><a href="#packages">Our Package</a></li>
+                <li><a href="#contact-form">Contact Us</a></li>
+            </ul>
+     </header>
 
-        <section class="nav-container">
-            <a class="nav-item">Home</a>
-            <a class="nav-item">Our Package</a>
-            <a class="nav-item">Call us</a>
-        </section>        
-    </nav>
+     <!-- main -->
+     <section id="banner">
+        <div class="slide">
+            <img src="assets/banner1.jpg" alt="Travel Image 1">
+        </div>
+        <div class="slide">
+            <img src="assets/banner2.jpg" alt="Travel Image 2">
+        </div>
+        <div class="slide">
+            <img src="assets/banner3.jpg" alt="Travel Image 3">
+        </div>
+    </section>
 
-    <main>
-        <article class="main-title">
-            <header>
-                <h1>Your trusted Travel Agent</h1>
+      <section id="packages">
+        <h2>Our Package</h2>
+        <div class="package-container">
+            <div class="package">
+                <h3>Bali</h3>
+                <p>The island of Bali. Enjoy your stay with beautiful beaches and cultural experiences.</p>
+            </div>
+            <div class="package">
+                <h3>Japan</h3>
+                <p>Experience the rich culture and advanced technology in the land of the rising sun.</p>
+            </div>
+            <div class="package">
+                <h3>Singapore</h3>
+                <p>Enjoy the vibrant city life, delicious food, and beautiful gardens.</p>
+            </div>
+            <div class="package">
+                <h3>Bandung</h3>
+                <p>Explore the cool climate and beautiful landscapes of Bandung.</p>
+            </div>
+            <div class="package">
+                <h3>Surabaya</h3>
+                <p>Discover the historical sites and delicious local cuisine of Surabaya.</p>
+            </div>
+            <div class="package">
+                <h3>Third Feature</h3>
+                <p>Experience the unique offerings of our third feature destination.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="First and last name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                
+                <label for="interest">What are you interested in?</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select option</option>
+                        <option value="travel-packages">Travel Packages</option>
+                        <option value="custom-itinerary">Custom Itinerary</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
 
-            </header>
-
-            <p>Your happiness is our happiness</p>
-
-        </article>
-
-        <section class="main-content">
-            <article class="main-content-item">
-                <div class="main-content-banner"></div>
-
-                <div class="main-item">
-                    <div class="item-icon"></div>
-                    <div>
-                        <h3>oke</h3>
-                        <p>Oke</p>
-                    </div>
-                </div>
-
-            </article>
-
-           <form class="main-content-item">
-            <input type="text"/>
-            <button type="button">Submit</button>
-           </form>
-        </section>
-    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>KeyTravel</h3>
+            <p>Your gateway to the best travel experiences. Contact us for more information and to plan your next adventure!</p>
+            <ul class="socials">
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 KeyTravel. Designed by Nayla Aurelia M</p>
+        </div>
+    </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
